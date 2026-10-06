@@ -1,0 +1,854 @@
+import { CourseCatalog } from '../types';
+
+export const coursesData: CourseCatalog = {
+  titre_programme: "Agile Fingers - Méthode Complète de Dactylographie Hors-Ligne",
+  description_globale: "Programme pédagogique structuré en 4 modules progressifs pour apprendre à taper à 10 doigts sans regarder le clavier avec rapidité, régularité et précision anatomique.",
+  version: "1.0.0",
+  mode: "100% Hors-ligne (Standalone Local Storage)",
+  modules: [
+    {
+      id: "mod1",
+      titre: "Module 1 : La Ligne de Repos (Home Row) & Doigts de Base",
+      description: "Apprentissage de l'ancrage tactile, de la posture d'accueil et des réflexes fondamentaux sur la rangée centrale du clavier.",
+      niveau: "Débutant",
+      duree_estimee: "45 minutes",
+      lecons: [
+        {
+          id: "mod1_lec1",
+          titre: "Leçon 1.1 : Les touches d'ancrage (F et J) & La barre d'espace",
+          objectif: "Repérer instantanément à l'aveugle les repères tactiles de F et J et coordonner les index avec les pouces pour l'espace.",
+          doigts_cibles: [
+            "Index gauche (F)",
+            "Index droit (J)",
+            "Pouces gauche/droit (Barre d'espace)"
+          ],
+          touches_etudiees: ["f", "j", " "],
+          guide_theorique: {
+            placement: [
+              "Posez vos poignets à l'horizontale, sans casser l'angle des avant-bras ni écraser vos paumes sur la table.",
+              "Courbez légèrement les doigts comme si vous teniez délicatement une balle de tennis ou un fruit rond.",
+              "Placez l'index gauche sur la touche F et l'index droit sur la touche J.",
+              "Laissez vos deux pouces flotter au-dessus de la barre d'espace. Utilisez de préférence le pouce opposé à la dernière main active."
+            ],
+            reperes_tactiles: "Les touches F et J possèdent chacune un minuscule ergot en relief (un petit trait ou point surélevé). Vos index doivent pouvoir les localiser les yeux fermés sans jamais regarder le clavier physique.",
+            regles_or: [
+              "Ne regardez JAMAIS le clavier : regardez exclusivement l'écran pour créer la mémoire proprioceptive.",
+              "Après chaque frappe, l'index doit immédiatement rester ou revenir en contact doux avec son ergot d'ancrage.",
+              "Appuyez avec la pulpe du doigt (l'extrémité arrondie), pas avec l'ongle à plat."
+            ],
+            astuce_vitesse: "Privilégiez la régularité métronomique plutôt que la vitesse brute : la vitesse n'est que la conséquence naturelle d'un geste précis."
+          },
+          exercices: [
+            {
+              id: "mod1_lec1_ex1",
+              type: "repetition",
+              title: "Guidage lent : Frappes isolées F et J",
+              instruction: "Place tes index sur les ergots de F et J. Tape chaque lettre sans regarder le clavier au rythme d'un métronome régulier.",
+              target_wpm: 15,
+              min_accuracy: 95,
+              content: "ffff jjjj ff jj fj fj fff jjj fjfj f j f j ffjj jjff fff jjj fjf jfj"
+            },
+            {
+              id: "mod1_lec1_ex2",
+              type: "words",
+              title: "Combinaisons et cadences courtes",
+              instruction: "Enchaîne les alternances de l'index gauche et de l'index droit avec le pouce sur la barre d'espace.",
+              target_wpm: 20,
+              min_accuracy: 96,
+              content: "fj jf ffj jjf fjj jff fjf jfj f jfj j fjf fjjf jffj fjfj jfjf ffff jjjj"
+            },
+            {
+              id: "mod1_lec1_ex3",
+              type: "sentences",
+              title: "Séquence continue de stabilisation",
+              instruction: "Conserve une posture détendue, les épaules relâchées et le regard fixé sur la ligne de texte.",
+              target_wpm: 22,
+              min_accuracy: 97,
+              content: "fj fj jf jf ff jj ff jj fjf jfj fff jjj ffff jjjj fj jf fj fj jf jf ff jj"
+            }
+          ]
+        },
+        {
+          id: "mod1_lec2",
+          titre: "Leçon 1.2 : Les doigts de la main gauche (Q, S, D, F / A, S, D, F)",
+          objectif: "Développer l'indépendance de l'auriculaire, de l'annulaire et du majeur de la main gauche sur la ligne de repos.",
+          doigts_cibles: [
+            "Auriculaire gauche (Q en AZERTY / A en QWERTY)",
+            "Annulaire gauche (S)",
+            "Majeur gauche (D)",
+            "Index gauche (F)",
+            "Pouce droit (Espace)"
+          ],
+          touches_etudiees: ["q", "s", "d", "f", "a"],
+          guide_theorique: {
+            placement: [
+              "En AZERTY, la rangée de repos gauche s'aligne ainsi : Auriculaire sur Q, Annulaire sur S, Majeur sur D, Index sur F.",
+              "En QWERTY, l'auriculaire gauche repose sur A au lieu de Q (A, S, D, F).",
+              "Gardez les 4 doigts en contact doux simultané avec leurs 4 touches respectives.",
+              "Quand l'annulaire ou l'auriculaire frappe, évitez de lever exagérément le majeur ou l'index."
+            ],
+            reperes_tactiles: "L'index gauche sert de pivot fixe sur F. Si votre main se décale, retrouvez immédiatement l'ergot de F pour réaligner Q, S, D sans regarder.",
+            regles_or: [
+              "L'auriculaire et l'annulaire sont naturellement moins musclés : n'appuyez pas plus fort, relâchez la tension musculaire.",
+              "Faites bouger le doigt depuis son articulation métacarpienne, sans tordre le poignet vers l'extérieur."
+            ],
+            astuce_vitesse: "L'indépendance de l'annulaire (S) est le secret d'une frappe rapide : pratiquez lentement jusqu'à éliminer toute hésitation."
+          },
+          exercices: [
+            {
+              id: "mod1_lec2_ex1",
+              type: "repetition",
+              title: "Guidage lent : Déploiement de la main gauche",
+              instruction: "Active chaque doigt de gauche à droite puis de droite à gauche sans décoller la main.",
+              target_wpm: 18,
+              min_accuracy: 95,
+              content: "qsdf qsdf fdsq fdsq dffd ssdd qqss fds qsd dsq sfd qsdf qsdf dsqf sqdf",
+              content_qwerty: "asdf asdf fdsa fdsa dffd ssdd aass fds asd dsa sfd asdf asdf dsaf sadf"
+            },
+            {
+              id: "mod1_lec2_ex2",
+              type: "words",
+              title: "Mots courts et combinaisons fluides",
+              instruction: "Forme des combinaisons de sons et mots réalisables uniquement avec la main gauche de repos.",
+              target_wpm: 22,
+              min_accuracy: 96,
+              content: "fds fsq dsq qsd dfs sqd fsd qsf dsf qdf fqs sdf dsq fds qsd fsd sqf",
+              content_qwerty: "sad fas fad dad das saf asd fda sad ads fas fsa dad fad saf fas"
+            },
+            {
+              id: "mod1_lec3_ex3",
+              type: "sentences",
+              title: "Séquence continue main gauche",
+              instruction: "Maintenez une pulsation stable. Validez chaque mot par une impulsion détendue du pouce droit sur Espace.",
+              target_wpm: 24,
+              min_accuracy: 97,
+              content: "qsdf dsqf fsdq sqdf qsdf fdsq ds fq sd fq fds dsq qsd fsd qsdf fdsq",
+              content_qwerty: "asdf dsaf fsda sadf asdf fdsa ds fa sd fa fad sad dad asdf fdsa"
+            }
+          ]
+        },
+        {
+          id: "mod1_lec3",
+          titre: "Leçon 1.3 : Les doigts de la main droite (J, K, L, M / J, K, L, ;)",
+          objectif: "Maîtriser les 4 touches de la main droite sur la ligne de repos et synchroniser les deux hémisphères.",
+          doigts_cibles: [
+            "Index droit (J)",
+            "Majeur droit (K)",
+            "Annulaire droit (L)",
+            "Auriculaire droit (M en AZERTY / ; en QWERTY)",
+            "Pouce gauche/droit (Espace)"
+          ],
+          touches_etudiees: ["j", "k", "l", "m", ";"],
+          guide_theorique: {
+            placement: [
+              "En AZERTY, la rangée de repos droite accueille : Index sur J, Majeur sur K, Annulaire sur L, Auriculaire sur M.",
+              "En QWERTY, l'auriculaire droit repose sur le point-virgule (;) et M se trouve sur la rangée inférieure.",
+              "Maintenez le coude légèrement écarté du corps, l'avant-bras aligné avec la ligne du clavier."
+            ],
+            reperes_tactiles: "L'ergot sous l'index droit sur J est votre boussole absolue : il garantit l'alignement immédiat de K, L et M.",
+            regles_or: [
+              "Ne déplacez pas la paume de droite à gauche pour atteindre M : seul l'auriculaire s'abaisse doucement sur sa touche.",
+              "Gardez les doigts souples et légèrement arqués, comme suspendus par des fils invisibles."
+            ],
+            astuce_vitesse: "Alternez mentalement les impulsions : 'gauche - droite - gauche - droite' pour équilibrer la réactivité neuronale."
+          },
+          exercices: [
+            {
+              id: "mod1_lec3_ex1",
+              type: "repetition",
+              title: "Guidage lent : Déploiement de la main droite",
+              instruction: "Frappe chaque doigt de la main droite en sentant distinctement chaque articulation.",
+              target_wpm: 18,
+              min_accuracy: 95,
+              content: "jklm jklm mlkj mlkj kllk jjkk mmll lkm jkl mlk klm jklm mlkj jklm",
+              content_qwerty: "jkl; jkl; ;lkj ;lkj kllk jjkk ;;ll lk; jkl ;lk kl; jkl; ;lkj jkl;"
+            },
+            {
+              id: "mod1_lec3_ex2",
+              type: "words",
+              title: "Combinaisons et coordination droite",
+              instruction: "Travaillez la précision de l'annulaire (L) et de l'auriculaire (M ou ;).",
+              target_wpm: 22,
+              min_accuracy: 96,
+              content: "jkl mlk klm lmj kml lkm jlm mlj kjl lkj jkm mlk jklm mlkj kmlj",
+              content_qwerty: "jkl ;lk kl; l;j k;l lk; jl; ;lj kjl lkj jk; ;lk jkl; ;lkj k;lj"
+            },
+            {
+              id: "mod1_lec3_ex3",
+              type: "sentences",
+              title: "Dialogue bimanuel sur la ligne de repos",
+              instruction: "Les deux mains dialoguent désormais en alternance parfaite sur les 8 touches fondamentales.",
+              target_wpm: 24,
+              min_accuracy: 97,
+              content: "qsdf jklm fdsq mlkj qj sk dl fm fd jm ql sk dm fl qsdf jklm qsdf jklm",
+              content_qwerty: "asdf jkl; fdsa ;lkj aj sk dl f; fd j; al sk d; fl asdf jkl; asdf jkl;"
+            }
+          ]
+        },
+        {
+          id: "mod1_lec4",
+          titre: "Leçon 1.4 : Touches centrales (G et H) & Intégration complète de la Ligne de Repos",
+          objectif: "Étendre les index vers le centre (G et H) sans quitter l'alignement de repos et revenir immédiatement aux ergots F et J.",
+          doigts_cibles: [
+            "Index gauche (F s'étend latéralement vers G)",
+            "Index droit (J s'étend latéralement vers H)",
+            "Tous les doigts des deux mains"
+          ],
+          touches_etudiees: ["g", "h", "q", "s", "d", "f", "j", "k", "l", "m"],
+          guide_theorique: {
+            placement: [
+              "Pour taper G : l'index gauche quitte son ergot F, glisse d'un pas vers la droite, frappe G, et REVIENT IMMÉDIATEMENT sur F.",
+              "Pour taper H : l'index droit quitte son ergot J, glisse d'un pas vers la gauche, frappe H, et REVIENT IMMÉDIATEMENT sur J.",
+              "IMPORTANT : Les autres doigts (Q, S, D et K, L, M) NE BOUGENT PAS pendant l'extension de l'index !"
+            ],
+            reperes_tactiles: "Le 'retour élastique' : visualisez un élastique qui ramène instantanément votre index sur son ergot respectif.",
+            regles_or: [
+              "Ne déplacez jamais l'ensemble de la main vers le centre pour chercher G ou H.",
+              "Conservez une pression légère : les touches centrales ne demandent aucun effort supplémentaire."
+            ],
+            astuce_vitesse: "Pensez par paires de touches : 'fgf' et 'jhj' comme un seul battement de cœur continu."
+          },
+          exercices: [
+            {
+              id: "mod1_lec4_ex1",
+              type: "repetition",
+              title: "Guidage lent : Extensions F-G et J-H",
+              instruction: "Effectue l'extension latérale de chaque index en vérifiant le retour immédiat sur F et J.",
+              target_wpm: 20,
+              min_accuracy: 95,
+              content: "fgf jhj fgf jhj fggf jhhj fghj jhg fgh jhg fg hj gh hg fgf jhj fgf jhj"
+            },
+            {
+              id: "mod1_lec4_ex2",
+              type: "words",
+              title: "Mots et syllabes avec G et H sur la ligne de repos",
+              instruction: "Tape les combinaisons de la rangée centrale complète avec fluidité et précision.",
+              target_wpm: 24,
+              min_accuracy: 96,
+              content: "flash gags hall dallas flags slash fall glad half glass shall mask",
+              content_qwerty: "flash gags hall dallas flags slash fall glad half glass shall mask"
+            },
+            {
+              id: "mod1_lec4_ex3",
+              type: "sentences",
+              title: "Séquence continue d'intégration totale",
+              instruction: "Enchaîne des phrases complètes utilisant l'intégralité de la ligne de repos sans hésiter.",
+              target_wpm: 26,
+              min_accuracy: 97,
+              content: "gala flash salsa saga dallas glad fall hall flags glass mask shall flags"
+            }
+          ]
+        }
+      ],
+      evaluation_module: {
+        id: "eval_mod1",
+        type: "evaluation",
+        title: "Évaluation officielle du Module 1 : Maîtrise de la Ligne de Repos",
+        instruction: "Test chronométré complet sur la ligne de repos. Visez au minimum 25 mots par minute avec 97% de précision.",
+        target_wpm: 25,
+        min_accuracy: 97,
+        content: "la salsa a la dallas flash fall gala salad flask glass flags hall shall glad mask saga gas alf"
+      }
+    },
+    {
+      id: "mod2",
+      titre: "Module 2 : La Ligne Supérieure & Les Extensions (Top Row)",
+      description: "Extension verticale des doigts vers le haut, conquête des voyelles majeures et alternances fluides avec la ligne de repos.",
+      niveau: "Intermédiaire",
+      duree_estimee: "55 minutes",
+      lecons: [
+        {
+          id: "mod2_lec1",
+          titre: "Leçon 2.1 : Index et Majeurs vers le haut (R, T, E / U, Y, I)",
+          objectif: "Maîtriser les trajectoires diagonales ascendantes des index et majeurs tout en conservant le repère des ergots.",
+          doigts_cibles: [
+            "Majeur gauche (D monte sur E)",
+            "Index gauche (F monte sur R et T)",
+            "Index droit (J monte sur U et Y)",
+            "Majeur droit (K monte sur I)",
+            "Pouces (Espace)"
+          ],
+          touches_etudiees: ["e", "r", "t", "u", "y", "i"],
+          guide_theorique: {
+            placement: [
+              "Majeur gauche : part de D, glisse en diagonale avant vers E, puis revient sur D.",
+              "Index gauche : part de F, monte vers R (diagonale directe) ou s'étend vers T (en haut au centre).",
+              "Index droit : part de J, monte vers U (diagonale directe) ou s'étend vers Y (en haut au centre).",
+              "Majeur droit : part de K, monte en diagonale avant vers I, puis revient sur K."
+            ],
+            reperes_tactiles: "Les paumes ne doivent jamais avancer : ce sont les doigts qui se déploient vers le haut. Les phalanges s'ouvrent légèrement sans décoller la base des mains.",
+            regles_or: [
+              "Chaque doigt a son couloir exclusif : ne montez jamais le majeur droit sur U ou l'index gauche sur E !",
+              "La lettre E et la lettre I sont les deux voyelles les plus fréquentes : leur frappe doit devenir un automatisme absolu."
+            ],
+            astuce_vitesse: "Pensez au rebond : le doigt effleure la touche supérieure et le poignet sert d'amortisseur souple."
+          },
+          exercices: [
+            {
+              id: "mod2_lec1_ex1",
+              type: "repetition",
+              title: "Guidage lent : Allers-retours verticaux",
+              instruction: "Monte sur la rangée supérieure puis redescends immédiatement sur la ligne de repos.",
+              target_wpm: 22,
+              min_accuracy: 95,
+              content: "frf ftf ded juj jyj kik frft jujy dedk fr juj de ki er ty ui re yt iu"
+            },
+            {
+              id: "mod2_lec1_ex2",
+              type: "words",
+              title: "Mots courts combinant voyelles E, I, U et consonnes R, T",
+              instruction: "Tape ces mots réels fluides formés avec la ligne supérieure et la ligne de repos.",
+              target_wpm: 26,
+              min_accuracy: 96,
+              content: "tire fuite terre tigre hier lutte utile truite rire fuir cuire durete"
+            },
+            {
+              id: "mod2_lec1_ex3",
+              type: "sentences",
+              title: "Séquence continue index et majeurs",
+              instruction: "Veille à ce que ton index gauche ne confonde jamais R et T, et ton index droit U et Y.",
+              target_wpm: 28,
+              min_accuracy: 97,
+              content: "il tire une truite fuite de hier le tigre rit de la terre cuite et rit"
+            }
+          ]
+        },
+        {
+          id: "mod2_lec2",
+          titre: "Leçon 2.2 : Auriculaires et Annulaires vers le haut (A, Z / O, P ou Q, W / O, P)",
+          objectif: "Muscler et coordonner les doigts périphériques vers les touches supérieures sans torsion du poignet.",
+          doigts_cibles: [
+            "Auriculaire gauche (Q monte sur A en AZERTY / A monte sur Q en QWERTY)",
+            "Annulaire gauche (S monte sur Z en AZERTY / S monte sur W en QWERTY)",
+            "Annulaire droit (L monte sur O)",
+            "Auriculaire droit (M monte sur P en AZERTY / ; monte sur P en QWERTY)"
+          ],
+          touches_etudiees: ["a", "z", "o", "p", "w", "q"],
+          guide_theorique: {
+            placement: [
+              "En AZERTY : l'auriculaire gauche part de Q pour frapper A, l'annulaire gauche part de S pour frapper Z.",
+              "En QWERTY : l'auriculaire gauche part de A pour frapper Q, l'annulaire gauche part de S pour frapper W.",
+              "Main droite (universel) : l'annulaire droit monte de L vers O, et l'auriculaire droit monte vers P."
+            ],
+            reperes_tactiles: "Ne laissez pas la main s'affaisser vers l'extérieur : gardez l'axe du poignet strictement parallèle au bureau.",
+            regles_or: [
+              "L'annulaire et l'auriculaire travaillent ensemble : laissez les doigts voisins accompagner souplement sans forcer.",
+              "Ne tapez jamais P avec l'annulaire ou A avec le majeur !"
+            ],
+            astuce_vitesse: "Détendez vos mâchoires et vos épaules : la tension dans l'auriculaire vient souvent d'une tension dans la nuque."
+          },
+          exercices: [
+            {
+              id: "mod2_lec2_ex1",
+              type: "repetition",
+              title: "Guidage lent : Extensions annulaires et auriculaires",
+              instruction: "Monte sur A, Z, O, P avec précision et contrôle sans précipitation.",
+              target_wpm: 22,
+              min_accuracy: 95,
+              content: "qaq szs lol mp mpm az op zo pa zo pa qaz lop aza opo zaz pop",
+              content_qwerty: "aqa sws lol ;p ;p; qw op wo pe wo pe qws lop aqa opo wsw pop"
+            },
+            {
+              id: "mod2_lec2_ex2",
+              type: "words",
+              title: "Mots avec A, Z, O, P et voyelles ouvertes",
+              instruction: "Exécute ces mots du vocabulaire courant sollicitant les extrémités du clavier.",
+              target_wpm: 26,
+              min_accuracy: 96,
+              content: "papa zoo place pompe polar zeste parole soupe page porte pose passe",
+              content_qwerty: "power pool pass post swap stop plot spot slow wasp drop loop"
+            },
+            {
+              id: "mod2_lec2_ex3",
+              type: "sentences",
+              title: "Séquence fluide sur les extrémités supérieures",
+              instruction: "Veille à la souplesse de l'auriculaire droit sur P et gauche sur A (ou Q).",
+              target_wpm: 28,
+              min_accuracy: 97,
+              content: "papa passe par la porte de la place et pose une soupe de poisson propre",
+              content_qwerty: "power will pass to the people who slow down and spot the top path"
+            }
+          ]
+        },
+        {
+          id: "mod2_lec3",
+          titre: "Leçon 2.3 : Alternance fluide Ligne de Repos <-> Ligne Supérieure",
+          objectif: "Harmoniser la navigation verticale entre les deux lignes sans à-coups et fluidifier les syllabes françaises courantes.",
+          doigts_cibles: [
+            "Les 10 doigts en coordination complète",
+            "Couloirs verticaux gauche et droit"
+          ],
+          touches_etudiees: ["a", "z", "e", "r", "t", "y", "u", "i", "o", "p", "q", "s", "d", "f", "g", "h", "j", "k", "l", "m"],
+          guide_theorique: {
+            placement: [
+              "Votre ligne de repos reste votre port d'attache permanent.",
+              "Dès qu'un doigt a frappé une touche en haut, il redescend se positionner au-dessus de sa touche de repos.",
+              "Évitez de 'garder' les doigts en l'air sur la ligne supérieure."
+            ],
+            reperes_tactiles: "Reprenez conscience des ergots de F et J à chaque espace entre deux mots.",
+            regles_or: [
+              "Lisez toujours 2 ou 3 lettres en avance par rapport à la lettre que votre doigt est en train de frapper.",
+              "Le rythme prime sur la vélocité : visez un tintement de touches cadencé et uniforme."
+            ],
+            astuce_vitesse: "Visualisez le mot entier comme une seule mélodie motrice avant de poser les doigts."
+          },
+          exercices: [
+            {
+              id: "mod2_lec3_ex1",
+              type: "repetition",
+              title: "Guidage lent : Ponts verticaux et syllabes clés",
+              instruction: "Tape ces syllabes françaises courantes qui alternent les deux étages du clavier.",
+              target_wpm: 24,
+              min_accuracy: 95,
+              content: "es re te de la ma pa si to ro il ou ar er ir ur ai oi au eu"
+            },
+            {
+              id: "mod2_lec3_ex2",
+              type: "words",
+              title: "Mots fréquents sur deux rangées",
+              instruction: "Tape des mots complets en conservant la légèreté de frappe.",
+              target_wpm: 28,
+              min_accuracy: 96,
+              content: "partir rester sortir parler aimer fleurite sourire histoire voiture rapide"
+            },
+            {
+              id: "mod2_lec3_ex3",
+              type: "sentences",
+              title: "Texte continu à deux niveaux",
+              instruction: "Une phrase fluide et élégante mettant en œuvre toutes les touches apprises jusqu'ici.",
+              target_wpm: 30,
+              min_accuracy: 97,
+              content: "la petite voiture rouge partira tard le soir pour faire plaisir aux amis"
+            }
+          ]
+        }
+      ],
+      evaluation_module: {
+        id: "eval_mod2",
+        type: "evaluation",
+        title: "Évaluation officielle du Module 2 : Ligne de Repos + Ligne Supérieure",
+        instruction: "Test de synthèse chronométré. Validez au moins 30 mots par minute avec 97% de précision sans regarder vos mains.",
+        target_wpm: 30,
+        min_accuracy: 97,
+        content: "les hirondelles rapides survolent la prairie rouge pour retrouver la terre ferme et faire la fete"
+      }
+    },
+    {
+      id: "mod3",
+      titre: "Module 3 : La Ligne Inférieure & La Ponctuation (Bottom Row)",
+      description: "Descente vers la ligne inférieure, conquête des consonnes basses et intégration instinctive des signes de ponctuation.",
+      niveau: "Avancé",
+      duree_estimee: "60 minutes",
+      lecons: [
+        {
+          id: "mod3_lec1",
+          titre: "Leçon 3.1 : Déplacement vers le bas (W, X, C, V, B, N / Z, X, C, V, B, N, M)",
+          objectif: "Fléchir les doigts vers la rangée inférieure avec précision sans écraser la paume sur le repose-poignets.",
+          doigts_cibles: [
+            "Auriculaire gauche (W en AZERTY / Z en QWERTY)",
+            "Annulaire gauche (X)",
+            "Majeur gauche (C)",
+            "Index gauche (V et B)",
+            "Index droit (N et , en AZERTY / N et M en QWERTY)"
+          ],
+          touches_etudiees: ["w", "x", "c", "v", "b", "n"],
+          guide_theorique: {
+            placement: [
+              "Pour descendre vers la ligne inférieure, les doigts se replient légèrement sous la paume (flexion des deux premières phalanges).",
+              "Majeur gauche : descend de D vers C.",
+              "Index gauche : descend de F vers V ou s'étend vers B (au centre bas).",
+              "Index droit : descend de J vers N (et vers virgule en AZERTY / M en QWERTY)."
+            ],
+            reperes_tactiles: "Attention : la ligne inférieure est décalée vers la droite par rapport à la rangée du milieu. La trajectoire n'est pas tout à fait verticale, elle est légèrement oblique.",
+            regles_or: [
+              "Ne laissez pas votre poignet s'enfoncer vers la table lorsque vous descendez.",
+              "La touche B est frappée par l'INDEX GAUCHE (certains débutants la frappent à tort avec la main droite)."
+            ],
+            astuce_vitesse: "Pensez à griffer doucement la touche du bout du doigt plutôt qu'à pousser vers le bas."
+          },
+          exercices: [
+            {
+              id: "mod3_lec1_ex1",
+              type: "repetition",
+              title: "Guidage lent : Flexions vers la rangée inférieure",
+              instruction: "Descends chaque doigt dans son couloir spécifique puis replace-le immédiatement.",
+              target_wpm: 24,
+              min_accuracy: 95,
+              content: "dcd fvf fbf jnj dcd fvf fbf jnj cv bn xc vb cx nv bc vn"
+            },
+            {
+              id: "mod3_lec1_ex2",
+              type: "words",
+              title: "Mots avec consonnes basses C, V, B, N, X",
+              instruction: "Enchaîne ces mots contenant les lettres de la ligne inférieure.",
+              target_wpm: 28,
+              min_accuracy: 96,
+              content: "bonjour cabine niveau bateau voisin viande wagon examen boxeur vivant"
+            },
+            {
+              id: "mod3_lec1_ex3",
+              type: "sentences",
+              title: "Séquence continue sur la rangée basse",
+              instruction: "Garde les poignets souples et veille au retour sur F et J.",
+              target_wpm: 30,
+              min_accuracy: 97,
+              content: "le bon bateau blanc navigue sur le vaste bassin avec un nouveau vent"
+            }
+          ]
+        },
+        {
+          id: "mod3_lec2",
+          titre: "Leçon 3.2 : La Ponctuation courante (Virgule, Point, Point-virgule, Deux-points, Exclamation)",
+          objectif: "Automatiser l'usage des signes de ponctuation usuels et la gestion systématique de l'espace subséquent.",
+          doigts_cibles: [
+            "Index droit (Virgule `,` en AZERTY)",
+            "Majeur droit (Point-virgule `;` en AZERTY)",
+            "Annulaire droit (Deux-points `:` en AZERTY / Point `.` avec Shift ou direct)",
+            "Auriculaire droit (Point d'exclamation `!` en AZERTY)"
+          ],
+          touches_etudiees: [",", ";", ":", "!", "."],
+          guide_theorique: {
+            placement: [
+              "En AZERTY, la rangée basse droite regroupe la ponctuation directe : N (index), virgule `,` (index/majeur), point-virgule `;` (majeur), deux-points `:` (annulaire), point d'exclamation `!` (auriculaire).",
+              "Le point `.` en AZERTY nécessite généralement la combinaison Shift + point-virgule (ou touche dédiée selon clavier).",
+              "En typographie française : pas d'espace avant la virgule et le point, un espace direct après. Pour les signes doubles (; : ! ?), une espace insécable précède le signe."
+            ],
+            reperes_tactiles: "Prenez le temps de sentir l'emplacement de la virgule et du point-virgule sans lever les yeux de l'écran.",
+            regles_or: [
+              "Ne cherchez jamais la virgule des yeux : son réflexe moteur doit être aussi naturel qu'une voyelle.",
+              "Chaque signe de ponctuation est immédiatement suivi d'une impulsion du pouce sur la barre d'espace."
+            ],
+            astuce_vitesse: "Traitez la ponctuation comme une note musicale qui respire dans la phrase."
+          },
+          exercices: [
+            {
+              id: "mod3_lec2_ex1",
+              type: "repetition",
+              title: "Guidage lent : Ponctuation et rythme d'espacement",
+              instruction: "Tape la ponctuation suivie immédiatement d'un espace.",
+              target_wpm: 22,
+              min_accuracy: 95,
+              content: "m, l; k: j! m, l; k: j! , , ; ; : : ! ! , ; : ! , ; : !"
+            },
+            {
+              id: "mod3_lec2_ex2",
+              type: "words",
+              title: "Mots ponctués et énumérations",
+              instruction: "Applique la cadence mot + ponctuation + espace.",
+              target_wpm: 26,
+              min_accuracy: 96,
+              content: "oui, non, vite, bien: stop! voici; voila, ensuite: parfait! bravo, merci;"
+            },
+            {
+              id: "mod3_lec2_ex3",
+              type: "sentences",
+              title: "Phrases complètes ponctuées",
+              instruction: "Saisis ce texte en respectant scrupuleusement la ponctuation et le rythme de lecture.",
+              target_wpm: 28,
+              min_accuracy: 97,
+              content: "regarde, le vent se leve: vite, viens ici! demain sera beau; nous irons marcher."
+            }
+          ]
+        },
+        {
+          id: "mod3_lec3",
+          titre: "Leçon 3.3 : Fluidité globale sur les 3 lignes alphabétiques",
+          objectif: "Consolider la mémoire motrice tridimensionnelle sur l'ensemble de l'alphabet (26 lettres) et la ponctuation.",
+          doigts_cibles: [
+            "Les 10 doigts en pleine synchronisation",
+            "Les 3 rangées alphabétiques complètes"
+          ],
+          touches_etudiees: ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"],
+          guide_theorique: {
+            placement: [
+              "Vous contrôlez désormais les 3 rangées principales du clavier.",
+              "Visualisez votre clavier mentalement comme une grille d'harmonie.",
+              "Vos mains flottent légèrement, calmes et centrées au-dessus de la ligne de repos."
+            ],
+            reperes_tactiles: "Revenez aux ergots de F et J après chaque fin de phrase.",
+            regles_or: [
+              "Si vous hésitez sur une lettre rare (W, X, Z), ralentissez légèrement l'ensemble de la phrase pour conserver un débit continu.",
+              "La régularité est supérieure aux pointes de vitesse brutales suivies d'arrêts."
+            ],
+            astuce_vitesse: "Respirez calmement en rythme avec vos frappes. Ne retenez jamais votre souffle pendant une phrase longue."
+          },
+          exercices: [
+            {
+              id: "mod3_lec3_ex1",
+              type: "repetition",
+              title: "Guidage lent : Le pangramme fondamental",
+              instruction: "Un pangramme contient toutes les 26 lettres de l'alphabet. Tape-le sans aucune erreur.",
+              target_wpm: 26,
+              min_accuracy: 96,
+              content: "portez ce vieux whisky au juge blond qui fume un cigare noir sans voix"
+            },
+            {
+              id: "mod3_lec3_ex2",
+              type: "words",
+              title: "Vocabulaire riche couvrant les trois étages",
+              instruction: "Enchaîne ces mots variés qui voyagent à travers l'ensemble des 3 rangées.",
+              target_wpm: 30,
+              min_accuracy: 97,
+              content: "joyeux xylophone wagon volcan quartz bijou cascade fluide zeste horizon"
+            },
+            {
+              id: "mod3_lec3_ex3",
+              type: "sentences",
+              title: "Paragraphe dactylographique complet",
+              instruction: "Tape ce paragraphe avec une aisance naturelle et une précision irréprochable.",
+              target_wpm: 32,
+              min_accuracy: 98,
+              content: "chaque jour est une nouvelle chance d'apprendre avec joie, calme et perserverance."
+            }
+          ]
+        }
+      ],
+      evaluation_module: {
+        id: "eval_mod3",
+        type: "evaluation",
+        title: "Évaluation officielle du Module 3 : Les 3 Rangées Alphabétiques & Ponctuation",
+        instruction: "Test d'endurance sur les trois étages du clavier. Visez au minimum 32 mots par minute avec 97% de précision.",
+        target_wpm: 32,
+        min_accuracy: 97,
+        content: "le vieux chef d'orchestre invite le jeune prodige, attentif et joyeux, a jouer sur son beau piano blanc."
+      }
+    },
+    {
+      id: "mod4",
+      titre: "Module 4 : Perfectionnement (Majuscules, Chiffres & Symboles)",
+      description: "Maîtrise de la touche Shift opposée, lettres accentuées, rangée des chiffres et symboles informatiques et bureautiques.",
+      niveau: "Expert",
+      duree_estimee: "70 minutes",
+      lecons: [
+        {
+          id: "mod4_lec1",
+          titre: "Leçon 4.1 : La touche Majuscule (Shift opposé) & Caractères accentués (é, è, à, ç)",
+          objectif: "Appliquer rigoureusement la règle du Shift avec la main opposée et taper avec fluidité les accents français.",
+          doigts_cibles: [
+            "Auriculaire gauche (Shift gauche pour les lettres de la main droite)",
+            "Auriculaire droit (Shift droit pour les lettres de la main gauche)",
+            "Touches accentuées é (majeur gauche), è (majeur droit/annulaire), à (auriculaire droit), ç (index/majeur)"
+          ],
+          touches_etudiees: ["Shift", "é", "è", "à", "ç"],
+          guide_theorique: {
+            placement: [
+              "LA RÈGLE D'OR DU SHIFT : Pour faire une majuscule avec la main DROITE (ex: J, K, L, P), enfoncez le Shift GAUCHE avec l'auriculaire gauche.",
+              "Pour faire une majuscule avec la main GAUCHE (ex: F, D, S, A, R), enfoncez le Shift DROIT avec l'auriculaire droit.",
+              "NE JAMAIS utiliser la même main pour tenir Shift et taper la lettre : cela déséquilibre toute la posture !",
+              "Accents français en accès direct sur la rangée supérieure (AZERTY) : é (touche 2), è (touche 7), à (touche 0), ç (touche 9)."
+            ],
+            reperes_tactiles: "Les touches Shift sont de larges touches situées juste en dessous des rangées de repos, facilement palpables par l'auriculaire.",
+            regles_or: [
+              "N'utilisez JAMAIS Caps Lock (Verrouillage Majuscule) pour une seule lettre majuscule.",
+              "Maintenez Shift enfoncé fermement, frappez la lettre, puis relâchez immédiatement Shift."
+            ],
+            astuce_vitesse: "Le geste ressemble à un accord de piano : les deux mains agissent en parfaite harmonie synchronisée."
+          },
+          exercices: [
+            {
+              id: "mod4_lec1_ex1",
+              type: "repetition",
+              title: "Guidage lent : Majuscules alternées et accents",
+              instruction: "Applique le Shift opposé pour chaque majuscule et tape les accents sans hésiter.",
+              target_wpm: 24,
+              min_accuracy: 95,
+              content: "Paris Lyon Rome Tokyo Madrid éè àç été fête règle garçon clé café déjà"
+            },
+            {
+              id: "mod4_lec1_ex2",
+              type: "words",
+              title: "Noms propres et vocabulaire accentué",
+              instruction: "Combine majuscules initiales et accents français du quotidien.",
+              target_wpm: 28,
+              min_accuracy: 96,
+              content: "Éléphant Français À bientôt Hélène Cécile François Genève Décembre Noël"
+            },
+            {
+              id: "mod4_lec1_ex3",
+              type: "sentences",
+              title: "Correspondance soignée et phrases complètes",
+              instruction: "Saisie d'un texte d'affaires élégant avec majuscules et accents irréprochables.",
+              target_wpm: 32,
+              min_accuracy: 97,
+              content: "Monsieur le Directeur, nous vous remercions sincèrement pour votre fidélité et votre écoute attentive."
+            }
+          ]
+        },
+        {
+          id: "mod4_lec2",
+          titre: "Leçon 4.2 : La ligne des chiffres (1 à 0)",
+          objectif: "Atteindre la rangée supérieure des chiffres avec les bons doigts et acquérir des réflexes pour les dates et montants.",
+          doigts_cibles: [
+            "Auriculaire gauche (1 & 2)",
+            "Annulaire gauche (3)",
+            "Majeur gauche (4)",
+            "Index gauche (5 & 6)",
+            "Index droit (7 & 8)",
+            "Majeur droit (9)",
+            "Annulaire / Auriculaire droit (0)"
+          ],
+          touches_etudiees: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"],
+          guide_theorique: {
+            placement: [
+              "La rangée des chiffres est la plus éloignée de la ligne de repos : elle exige une extension mesurée de la main.",
+              "En AZERTY français, les chiffres nécessitent d'enfoncer la touche Shift (ou l'activation du pavé numérique le cas échéant).",
+              "En QWERTY, les chiffres sont en accès direct sans Shift.",
+              "Assurez-vous de remonter depuis l'ergot de repos sans décaler l'angle du poignet."
+            ],
+            reperes_tactiles: "Prenez pour repère les chiffres 5 et 6 (au centre) pour situer l'ensemble de la réglette numérique.",
+            regles_or: [
+              "Ne quittez pas la position de repos avec vos deux mains en même temps : gardez une main ancrée comme référence.",
+              "Pour les nombres longs, regroupez mentalement les chiffres par paires (ex: 20-26 plutôt que 2-0-2-6)."
+            ],
+            astuce_vitesse: "Dactylographier les chiffres sans regarder le clavier est la marque distinctive des professionnels de la frappe."
+          },
+          exercices: [
+            {
+              id: "mod4_lec2_ex1",
+              type: "repetition",
+              title: "Guidage lent : Échelle numérique 1 à 0",
+              instruction: "Saisis chaque chiffre en respectant scrupuleusement l'assignation de chaque doigt.",
+              target_wpm: 22,
+              min_accuracy: 95,
+              content: "1 2 3 4 5 6 7 8 9 0 12 34 56 78 90 2024 2025 2026 100 250 500 1000"
+            },
+            {
+              id: "mod4_lec2_ex2",
+              type: "words",
+              title: "Dates, codes et mesures chiffrées",
+              instruction: "Exécute ces séquences courantes mêlant texte et données chiffrées.",
+              target_wpm: 26,
+              min_accuracy: 96,
+              content: "le 14 juillet 1789, en l'an 2026, 42 km de course, 150 euros, 365 jours par an"
+            },
+            {
+              id: "mod4_lec2_ex3",
+              type: "sentences",
+              title: "Séquence administrative et comptable",
+              instruction: "Tape ce relevé d'activité chiffré sans aucune faute de frappe.",
+              target_wpm: 28,
+              min_accuracy: 97,
+              content: "La facture 8492 du 12 octobre 2026 indique un montant de 3450 euros pour 18 prestations."
+            }
+          ]
+        },
+        {
+          id: "mod4_lec3",
+          titre: "Leçon 4.3 : Caractères spéciaux & Symboles de code (@, #, (, ), {, }, /, =, +)",
+          objectif: "Maîtriser les raccourcis Shift et Alt Gr pour les symboles incontournables de la programmation et du web.",
+          doigts_cibles: [
+            "Pouce droit ou auriculaire (Alt Gr)",
+            "Auriculaires gauche/droit (Shift)",
+            "Doigts cibles pour les parenthèses, crochets, accolades, égal et barres obliques"
+          ],
+          touches_etudiees: ["@", "#", "(", ")", "{", "}", "/", "=", "+"],
+          guide_theorique: {
+            placement: [
+              "Alt Gr est manipulé par le POUCE DROIT (ou l'index droit sur certains claviers ergonomiques).",
+              "Pour @ en AZERTY : Alt Gr + touche zéro (ou à).",
+              "Pour # en AZERTY : Alt Gr + touche 3.",
+              "Pour { et } : Alt Gr + touche 4 et 5 (ou selon disposition).",
+              "Parenthèses ( et ) : directement accessibles avec les doigts de la main droite sur AZERTY."
+            ],
+            reperes_tactiles: "Alt Gr est situé immédiatement à droite de la barre d'espace : votre pouce droit le trouve d'un simple glissement vers la droite.",
+            regles_or: [
+              "Enfoncez Alt Gr avant de frapper la touche du symbole, puis relâchez immédiatement.",
+              "Gardez la main gauche stable pour maintenir le repère de la rangée de repos."
+            ],
+            astuce_vitesse: "Pour les développeurs et rédacteurs techniques, ces symboles représentent jusqu'à 25% de la frappe : entraînez-les régulièrement."
+          },
+          exercices: [
+            {
+              id: "mod4_lec3_ex1",
+              type: "repetition",
+              title: "Guidage lent : Symboles isolés et parenthèses",
+              instruction: "Enchaîne les symboles avec précision et contrôle.",
+              target_wpm: 20,
+              min_accuracy: 94,
+              content: "( ) [ ] { } @ # / = + - ( ) @ # / = + { } [ ]"
+            },
+            {
+              id: "mod4_lec3_ex2",
+              type: "words",
+              title: "Adresses emails, syntaxes web et calculs",
+              instruction: "Formate ces expressions modernes du numérique et de la bureautique.",
+              target_wpm: 25,
+              min_accuracy: 95,
+              content: "contact@agile.org #web (index) {value} total = 12 + 8 / 2; user_id = 42;"
+            },
+            {
+              id: "mod4_lec3_ex3",
+              type: "sentences",
+              title: "Séquence mixte de code et communication",
+              instruction: "Tape cet extrait mixte combinant français, ponctuation et syntaxe technique.",
+              target_wpm: 28,
+              min_accuracy: 96,
+              content: "Pour envoyer vos données, écrivez à support@agilefingers.com avec l'objet: #Session (v2.0) = OK."
+            }
+          ]
+        },
+        {
+          id: "mod4_lec4",
+          titre: "Leçon 4.4 : Test final d'aptitude 'Agile Fingers Master'",
+          objectif: "Consacrer votre autonomie complète : vitesse supérieure à 40 WPM, précision supérieure à 98% sur un texte littéraire et technique.",
+          doigts_cibles: [
+            "Les 10 doigts en maîtrise instinctive totale",
+            "Toutes les rangées, chiffres, accents, majuscules et symboles"
+          ],
+          touches_etudiees: ["Ensemble du clavier physique"],
+          guide_theorique: {
+            placement: [
+              "Posture finale du virtuose : buste droit, pieds ancrés au sol, épaules détendues, regard fermement ancré sur le texte à venir.",
+              "Aucun coup d'œil vers le clavier. Vos doigts savent exactement où se trouve chaque touche.",
+              "Vous êtes en état de 'flow' dactylographique : la pensée devient texte sans passer par l'effort mécanique."
+            ],
+            reperes_tactiles: "Les ergots de F et J sont vos compagnons silencieux et permanents.",
+            regles_or: [
+              "Ne cherchez pas à battre un record dans les 10 premières secondes : installez une cadence souveraine et régulière.",
+              "La vitesse maximale découle toujours de l'absence totale d'erreurs."
+            ],
+            astuce_vitesse: "Profitez du plaisir de taper sans effort. Vos doigts sont désormais agiles et libres !"
+          },
+          exercices: [
+            {
+              id: "mod4_lec4_ex1",
+              type: "repetition",
+              title: "Échauffement d'aptitude : Traversée complète",
+              instruction: "Échauffe tes 10 doigts sur cette séquence harmonieuse avant le grand test.",
+              target_wpm: 32,
+              min_accuracy: 97,
+              content: "Agile Fingers transforme la frappe au clavier en un art fluide, rapide et instinctif pour tous."
+            },
+            {
+              id: "mod4_lec4_ex2",
+              type: "words",
+              title: "Parcours de virtuosité mixte",
+              instruction: "Tape ce texte équilibré contenant majuscules, accents, ponctuation et chiffres.",
+              target_wpm: 36,
+              min_accuracy: 97,
+              content: "En 2026, plus de 85% des professionnels rédigent sans regarder leurs mains: précision et sérénité!"
+            },
+            {
+              id: "mod4_lec4_ex3",
+              type: "sentences",
+              title: "L'épreuve finale : Texte réaliste intégral",
+              instruction: "Le test ultime de certification Agile Fingers. Concentrez-vous, respirez, et tapez avec fluidité.",
+              target_wpm: 40,
+              min_accuracy: 98,
+              content: "La maîtrise du clavier est une liberté inestimable: chaque mot jaillit de l'esprit vers l'écran avec une limpidité parfaite, sans hésitation ni fatigue."
+            }
+          ]
+        }
+      ],
+      evaluation_module: {
+        id: "eval_mod4",
+        type: "evaluation",
+        title: "Grand Examen Final : Certification 'Agile Fingers Master'",
+        instruction: "Test officiel de fin de cursus. Atteignez au minimum 40 mots par minute avec 98% de précision pour valider le titre de Maître Dactylographe.",
+        target_wpm: 40,
+        min_accuracy: 98,
+        content: "Félicitations pour votre engagement remarquable: vous possédez désormais la mémoire musculaire des 10 doigts, capable de transformer la pensée en texte avec une rapidité exemplaire (vitesse > 40 MPM et précision > 98%)!"
+      }
+    }
+  ]
+};

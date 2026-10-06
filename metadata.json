@@ -1,0 +1,6 @@
+{
+  "name": "Agile Fingers - Cours & Exercices de Dactylographie",
+  "description": "Application pédagogique et hors-ligne d'apprentissage de la dactylographie : 4 modules progressifs, guidage des doigts, clavier interactif et exercices pratiques.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
